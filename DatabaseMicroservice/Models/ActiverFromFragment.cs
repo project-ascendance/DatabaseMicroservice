@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace DatabaseMicroservice.Models
 {
-    internal class TextFragment : Fragment
+    internal class ActiverFromFragment : Fragment
     {
-        public override string FragmentType { get; set; } = "text";
+        public override string FragmentType { get; set; } = "activeFrom";
         [Required]
-        public string Body { get; set; }
+        public DateTime ActiveFrom { get; set; }
+        public DateTime? ActiveTo { get; set; }
     }
 }

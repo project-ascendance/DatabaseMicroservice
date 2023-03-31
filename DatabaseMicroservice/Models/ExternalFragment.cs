@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace DatabaseMicroservice.Models
 {
-    internal class TextFragment : Fragment
+    internal class ExternalFragment : Fragment
     {
-        public override string FragmentType { get; set; } = "text";
+        public override string FragmentType { get; set; } = "external";
         [Required]
-        public string Body { get; set; }
+        public string ExcernalType { get; set; }
+        [Required]
+        public string ExternalId { get; set; }
     }
 }
